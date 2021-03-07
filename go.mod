@@ -3,7 +3,6 @@ module github.com/AlexbavGamer/CSSVerificationRelay
 go 1.12
 
 
-require "github.com/AlexbavGamer/CSSVerificationRelay" v0.0.0
 require (
 	github.com/BurntSushi/toml v0.3.1
 	github.com/Necroforger/dgrouter v0.0.0-20190528143456-040421b5a83e

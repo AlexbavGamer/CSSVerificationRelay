@@ -19,6 +19,7 @@ func init() {
 	logrus.SetLevel(logrus.InfoLevel)
 
 	flag.StringVar(&action, "service", "", "Install, uninstall, start, stop, restart")
+	flag.StringVar(&config.Path, "config", "config.toml", "Path to the config file")
 
 	flag.Parse()
 }

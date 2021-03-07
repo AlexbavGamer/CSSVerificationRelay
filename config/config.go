@@ -1,4 +1,4 @@
-package github.com/AlexbavGamer/CSSVerificationRelay/config
+package config
 
 import (
 	"github.com/BurntSushi/toml"
