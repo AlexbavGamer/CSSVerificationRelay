@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/AlexbavGamer/CSSVerificationRelay/bot"
 	"github.com/AlexbavGamer/CSSVerificationRelay/config"
 
 	"github.com/kardianos/service"
@@ -30,6 +31,8 @@ func (p *program) Start(s service.Service) error {
 	logrus.Infof("Server is now running on version %s. Press CTRL-C to exit.", config.SCRVER)
 
 	config.ParseString()
+
+	bot.Initialize()
 
 	return nil
 }
