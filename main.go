@@ -29,6 +29,8 @@ type program struct{}
 func (p *program) Start(s service.Service) error {
 	logrus.Infof("Server is now running on version %s. Press CTRL-C to exit.", config.SCRVER)
 
+	config.ParseString()
+
 	return nil
 }
 
